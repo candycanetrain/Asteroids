@@ -126,6 +126,7 @@ Function.prototype.curry = function(numArgs) {
 Function.prototype.curry2 = function(numArgs) {
   let numbers = [];
   let fn = this;
+  // const _curriedSum = (number) => {} ////(OR THIS) and dont' need  'fn = this'
   function _curriedSum(number) {
     numbers.push(number);
     if (numbers.length === numArgs) {
